@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://github.com/seekrcentral/seekrflow/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 06addf48c61aae3bfa7fddb006ef96a4c436ef63af266c7c66fd3ea2a95a4b09
+  sha256: 220fe0aaa0cdc14c2ad3a7ab45411f3a8be6369dd8c54c48ada3f41a654018db
 
 build:
   noarch: python
   script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
