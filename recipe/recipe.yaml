@@ -53,7 +53,7 @@ tests:
         - "*"
       pip_check: true
   - script:
-      - python -c "import openmm; import seekrflow; print(seekrflow.__version__); import importlib.metadata; assert importlib.metadata.version('seekrflow') == '3.1.4'; assert seekrflow.__version__ == '3.1.4'"
+      - python -c "import openmm; import seekrflow; print(seekrflow.__version__); import importlib.metadata; assert importlib.metadata.version('seekrflow') == '3.2.0'; assert seekrflow.__version__ == '3.2.0'"
 
 about:
   homepage: https://github.com/seekrcentral/seekrflow/
