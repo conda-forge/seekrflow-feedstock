@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.1.4"
+  version: "3.2.0"
 
 package:
   name: seekrflow
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/seekrcentral/seekrflow/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 26cafac0011b33a9ebfca611d10b519c46036b899939eba72fad902c52c40c4e
+  sha256: 2f3958bd97ba3f70b2243f63574abac53e8352c6a0d74280f0c71627c468244f
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ requirements:
     - seekr ==3.1.4
     - six
     - openmm >=8
-    
+
 tests:
   - python:
       imports:
