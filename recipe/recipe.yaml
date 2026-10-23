@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.1.4"
+  version: "3.2.0"
 
 package:
   name: seekrflow
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/seekrcentral/seekrflow/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 26cafac0011b33a9ebfca611d10b519c46036b899939eba72fad902c52c40c4e
+  sha256: 220fe0aaa0cdc14c2ad3a7ab45411f3a8be6369dd8c54c48ada3f41a654018db
 
 build:
   noarch: python
@@ -39,6 +39,10 @@ requirements:
     - seekr ==3.1.4
     - six
     - openmm >=8
+    - rhapsody-py
+    - psutil
+    - opentelemetry-api
+    - opentelemetry-sdk
     
 tests:
   - python:
@@ -49,7 +53,7 @@ tests:
         - "*"
       pip_check: true
   - script:
-      - python -c "import openmm; import seekrflow; print(seekrflow.__version__); import importlib.metadata; assert importlib.metadata.version('seekrflow') == '3.1.4'; assert seekrflow.__version__ == '3.1.4'"
+      - python -c "import openmm; import seekrflow; print(seekrflow.__version__); import importlib.metadata; assert importlib.metadata.version('seekrflow') == '3.2.0'; assert seekrflow.__version__ == '3.2.0'"
 
 about:
   homepage: https://github.com/seekrcentral/seekrflow/
